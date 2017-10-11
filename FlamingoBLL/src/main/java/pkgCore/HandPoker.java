@@ -224,7 +224,7 @@ public class HandPoker extends Hand {
 		boolean bisStraight = false;
 		HandScorePoker HSP = (HandScorePoker) super.getHS();
 		
-		for(int C = 0;C < super.getCards().size(); C++){
+		for(int C = 0;C < super.getCards().size()-1; C++){
 			if(super.getCards().get(C).geteRank().getiRankNbr() != 
 			super.getCards().get(C+1).geteRank().getiRankNbr()+1){
 				break;
